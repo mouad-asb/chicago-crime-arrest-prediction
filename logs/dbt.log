@@ -1,0 +1,44 @@
+[0m19:13:32.908001 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5FA91C880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5FD800160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5FD800850>]}
+
+
+============================== 19:13:32.913001 | 89fb6436-b503-4deb-a249-087c6067eccf ==============================
+[0m19:13:32.913001 [info ] [MainThread]: Running with dbt=1.7.4
+[0m19:13:32.914999 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'cache_selected_only': 'False', 'log_path': 'logs', 'invocation_command': 'dbt init chicago_crime_forecast', 'log_cache_events': 'False', 'write_json': 'True', 'printer_width': '80', 'version_check': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'partial_parse': 'True', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\PC\\.dbt', 'quiet': 'False', 'indirect_selection': 'eager', 'debug': 'False', 'fail_fast': 'False', 'no_print': 'None'}
+[0m19:13:32.915999 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': WindowsPath('C:/Users/PC/.dbt')}
+[0m19:13:32.917000 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m19:13:32.921000 [debug] [MainThread]: Starter project path: C:\Users\PC\miniconda3\envs\dbt-env\lib\site-packages\dbt\include\starter_project
+[0m19:13:32.951999 [info ] [MainThread]: 
+Your new dbt project "chicago_crime_forecast" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m19:13:32.953000 [info ] [MainThread]: Setting up your profile.
+[0m19:14:49.270763 [info ] [MainThread]: Profile chicago_crime_forecast written to C:\Users\PC\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m19:14:49.273189 [debug] [MainThread]: Command `dbt init` succeeded at 19:14:49.273189 after 76.37 seconds
+[0m19:14:49.274192 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5FA91C880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5F6603C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5FD800D00>]}
+[0m19:14:49.274192 [debug] [MainThread]: Flushing usage events
+[0m20:04:15.022838 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000138CE24CDC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000138D11CA0E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000138D11C9ED0>]}
+
+
+============================== 20:04:15.027837 | b3740c62-3e39-4e9b-9f86-01a33f348abc ==============================
+[0m20:04:15.027837 [info ] [MainThread]: Running with dbt=1.7.4
+[0m20:04:15.029839 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'cache_selected_only': 'False', 'log_path': 'logs', 'invocation_command': 'dbt test', 'log_cache_events': 'False', 'write_json': 'True', 'version_check': 'True', 'printer_width': '80', 'target_path': 'None', 'static_parser': 'True', 'warn_error': 'None', 'use_experimental_parser': 'False', 'use_colors': 'True', 'quiet': 'False', 'profiles_dir': 'C:\\Users\\PC\\.dbt', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'indirect_selection': 'eager', 'debug': 'False', 'fail_fast': 'False', 'no_print': 'None'}
+[0m20:04:15.030839 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\PC\Desktop\chicago-crimes-forecast\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:04:15.031838 [debug] [MainThread]: Command `dbt test` failed at 20:04:15.031838 after 0.09 seconds
+[0m20:04:15.032838 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000138CE24CDC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000138D11C9E70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000138D11CA170>]}
+[0m20:04:15.032838 [debug] [MainThread]: Flushing usage events

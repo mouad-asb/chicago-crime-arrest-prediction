@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: feat_crimes
+    description: "Feature-engineered table ready for ML training. Includes historical arrest rates by crime type, district, hour and day of week."
+    columns:
+      - name: crime_id
+        description: "Unique identifier"
+        tests:
+          - unique
+          - not_null
+
+      - name: arrest
+        description: "Target variable — whether the crime resulted in an arrest"
+        tests:
+          - not_null
+
+      - name: crime_type_arrest_rate
+        description: "Historical arrest rate for this crime type across all records"
+        tests:
+          - not_null
+
+      - name: district_arrest_rate
+        description: "Historical arrest rate for this district across all records"
+
+      - name: time_of_day
+        description: "Bucketed time of day: morning, afternoon, evening, night"
+        tests:
+          - accepted_values:
+              values: ['morning', 'afternoon', 'evening', 'night']

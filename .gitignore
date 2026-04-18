@@ -1,0 +1,18 @@
+# Data — too large for GitHub
+Crimes_-_2001_to_Present.csv
+data/
+data_real/
+data_fake/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Env
+.env
+venv/
+
+# OS
+.DS_Store
+Thumbs.db

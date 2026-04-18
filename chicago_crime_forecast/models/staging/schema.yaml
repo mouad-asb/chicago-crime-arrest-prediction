@@ -1,0 +1,37 @@
+version: 2
+
+models:
+  - name: stg_crimes
+    description: "Cleaned and standardized Chicago crime incidents from 2001 to present"
+    columns:
+      - name: crime_id
+        description: "Unique identifier for each crime incident"
+        tests:
+          - unique
+          - not_null
+
+      - name: case_number
+        description: "Chicago PD case number"
+        tests:
+          - not_null
+
+      - name: crime_timestamp
+        description: "Parsed timestamp of the crime"
+        tests:
+          - not_null
+
+      - name: crime_type
+        description: "Primary crime type, uppercased and trimmed"
+        tests:
+          - not_null
+
+      - name: arrest
+        description: "Whether the crime resulted in an arrest"
+        tests:
+          - not_null
+
+      - name: district
+        description: "Chicago PD district number"
+
+      - name: community_area
+        description: "Chicago community area number"
