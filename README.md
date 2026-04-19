@@ -164,7 +164,7 @@ LGBMClassifier(
 )
 ```
 
-Early stopping with 50 rounds patience on validation AUC.
+Hyperparameters were chosen to balance model complexity with generalization on a 7M-row training set. A low learning rate (0.05) with high n_estimators and early stopping allows convergence without overfitting. num_leaves=63 increases tree complexity relative to the LightGBM default (31), justified by the large training size. Row and column subsampling (0.8) combined with L1/L2 regularization further reduce variance, this is particularly important given the temporal distribution shift between train and test sets.
 
 ---
 
