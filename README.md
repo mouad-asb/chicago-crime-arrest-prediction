@@ -1,6 +1,6 @@
 # Chicago Crime Arrest Prediction
 
-As a crime series enthusiast, I once wondered whether it's possible to statistically predict if a crime would end in an arrest.
+As a crime series enthusiast, I once wondered whether it's possible to statistically predict if a certain crime would end in an arrest only based on the prior belief about the said crime family.
 This project is my answer: an end-to-end MLOps pipeline that predicts the probability of arrest for a reported crime in Chicago, trained on **8.5 million crime records (2001–2026)**.
 
 > **Stack:** PostgreSQL · dbt · LightGBM · FastAPI · Docker  
